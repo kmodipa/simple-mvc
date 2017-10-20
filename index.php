@@ -14,7 +14,15 @@ require_once ('Routes.php');
  */
 function __autoload($class_name)
 {
-    require_once './classes/'.$class_name.'.php';
+    if (file_exists('./classes/'.$class_name.'.php'))
+    {
+        require_once './classes/'.$class_name.'.php';
+    }
+    elseif (file_exists('./Controllers/'.$class_name.'.php'))
+    {
+        require_once './Controllers/'.$class_name.'.php';
+    }
+
 }
 
 ?>
