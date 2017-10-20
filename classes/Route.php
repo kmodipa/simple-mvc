@@ -14,7 +14,11 @@ class Route
          *echo '</br>';
          */
 
-        $function->__invoke();  /* This will run the function from Routes.php */
+        /* Run the correct function */
+        if ($_GET['url'] == $route)
+        {
+            $function->__invoke();  /* This will run the function from Routes.php */
+        }
     }
 }
 
