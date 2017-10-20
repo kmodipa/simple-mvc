@@ -10,8 +10,11 @@ class Route
          * or methods from inside the class definition.*/
         self::$validRoutes[] = $route; /* collect */
 
-        print_r(self::$validRoutes);
-        echo '</br>';
+        /*print_r(self::$validRoutes);
+         *echo '</br>';
+         */
+
+        $function->__invoke();  /* This will run the function from Routes.php */
     }
 }
 
