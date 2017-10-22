@@ -1,3 +1,11 @@
+<?php
+
+if (isset($_SESSION['id']))
+    echo "User ".$_SESSION['id']." logged in";
+else
+    echo "You are not logged in!";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,13 +19,7 @@
         echo "<link " . "href=$base64 rel='stylesheet'>";
     ?>
 </head>
-<?php
 
-if (isset($_SESSION['id']))
-    echo "User ".$_SESSION['id']." logged in";
-else
-    echo "You are not logged in!";
-?>
 	<body>
 		<!-- The login form -->
 		<div class="container">
