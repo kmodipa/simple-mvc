@@ -15,4 +15,12 @@ Route::set('contact-us', function () {
     ContactUs::CreatView('ContactUs');
 });
 
+Route::set('login', function () {
+    ContactUs::CreatView('user_login');
+});
+
+Route::set('register', function () {
+    ContactUs::CreatView('user_register');
+});
+
 ?>
