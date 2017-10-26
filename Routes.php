@@ -3,6 +3,7 @@
 /* This file helps you to access routes */
 
 Route::set('index', function () {
+   /* ControllerName::Method(); */
     Index::CreatView('Index');
 });
 
@@ -16,11 +17,11 @@ Route::set('contact-us', function () {
 });
 
 Route::set('login', function () {
-    ContactUs::CreatView('user_login');
+    Login::CreatView('user_login');
 });
 
 Route::set('register', function () {
-    ContactUs::CreatView('user_register');
+    Register::CreatView('user_register');
 });
 
 ?>
