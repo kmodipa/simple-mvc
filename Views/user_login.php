@@ -5,7 +5,7 @@ if (isset($_SESSION['id']))
 else
     echo "You are not logged in!";
 
-if ($_POST['register'] == "OK")
+if (isset($_POST['register']))
 {
   header('Location: register');
 }

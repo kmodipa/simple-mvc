@@ -1,5 +1,5 @@
 <?php
-if ($_POST['signin'] == "OK")
+if (isset($_POST['signin']))
 {
   header('Location: login');
 }
