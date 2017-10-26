@@ -4,6 +4,11 @@ if (isset($_SESSION['id']))
     echo "User ".$_SESSION['id']." logged in";
 else
     echo "You are not logged in!";
+
+if ($_POST['register'] == "OK")
+{
+  header('Location: register');
+}
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +29,7 @@ else
 		<!-- The login form -->
 		<div class="container">
 			<h2>User Login</h2>
-			<form action=<?php ROOT_DIR."/Controllers/login.php" ?> method="POST" style="border:1px solid #ccc">
+			<form action='login' method="POST" style="border:1px solid #ccc">
 			  <div class="form_inside">
 			    <label><b>Username</b></label>
 			    <input type="text" placeholder="Enter Username" name="login">

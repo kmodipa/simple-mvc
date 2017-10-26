@@ -1,3 +1,10 @@
+<?php
+if ($_POST['signin'] == "OK")
+{
+  header('Location: login');
+}
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -17,7 +24,7 @@
 		<!-- The Registration form -->
 		<div class="container">
 			<h2>User Registration</h2>
-			<form action=<?php ROOT_DIR."/Controllers/register.php" ?> method="POST" style="border:1px solid #ccc">
+			<form action='register' method="POST" style="border:1px solid #ccc">
 			  <div class="form_inside">
 			  	<label><b>First Name</b></label>
 			    <input type="text" placeholder="Enter First Name" name="first_name" >
