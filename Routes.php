@@ -12,8 +12,8 @@ Route::set('about-us', function () {
     AboutUs::CreatView('AboutUs');
 });
 
-Route::set('contact-us', function () {
-    ContactUs::CreatView('ContactUs');
+Route::set('user-profile', function () {
+    UserProfile::CreatView('UserProfile');
 });
 
 Route::set('login', function () {
@@ -22,6 +22,7 @@ Route::set('login', function () {
 
 Route::set('register', function () {
     Register::CreatView('user_register');
+    Register::create();
 });
 
 ?>
