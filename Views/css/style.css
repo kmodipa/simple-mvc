@@ -22,7 +22,7 @@ button {
 /* Extra styles for the cancel button */
 .recoverybtn {
     padding: 14px 20px;
-    background-color: #f44336;
+    background-color: #14cece;
 }
 
 /* Extra styles for the register button */
@@ -32,14 +32,14 @@ button {
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn,.registerbtn {
+.recoverybtn,.signupbtn,.registerbtn {
     float: left;
-    width: 50%;
+    width: 33.33%;
 }
 
 /* Add padding to container elements */
 .container {
-    padding-top: 10%;
+    padding-top: 3%;
     padding-left: 16%;
     padding-right: 16%;
 }
