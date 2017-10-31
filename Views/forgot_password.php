@@ -28,7 +28,7 @@ if (isset($_POST['register']))
 	<body>
 		<!-- The login form -->
 		<div class="container">
-			<h2>Passowrd Recovery</h2>
+			<h2>Password Recovery</h2>
 			<form action='login' method="POST" style="border:1px solid #ccc">
 			  <div class="form_inside">
 			    <label><b>Username</b></label>
