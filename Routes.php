@@ -8,7 +8,9 @@ Route::set('index', function () {
 });
 
 Route::set('about-us', function () {
-    /* When we access a route we can run a function here */
+    /* When we access a route we can run a function here
+     * The code for the function goes here
+     */
     AboutUs::CreatView('AboutUs');
 });
 
@@ -23,6 +25,11 @@ Route::set('login', function () {
 Route::set('register', function () {
     Register::CreatView('user_register');
     Register::create();
+});
+
+Route::set('forgot_password', function () {
+    Recovery::CreatView('forgot_password');
+    Recovery::recover();
 });
 
 ?>
