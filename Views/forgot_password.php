@@ -43,7 +43,7 @@ if (isset($_POST['register']))
 			    <div class="clearfix">
 			      <button type="submit" class="signupbtn" name = "signin" value="OK">Sign In</button>
 			      <button type="submit" class="registerbtn" name = "register" value="OK">Register</button>
-            <button type="submit" class="recoverybtn" name = "register" value="OK">Recover</button>
+            <button type="submit" class="recoverybtn" name = "recovery" value="OK">Recover</button>
 			    </div>
 			  </div>
 			</form>
