@@ -32,6 +32,8 @@ if (isset($_POST['signin']))
 			    <input type="text" placeholder="Enter Last Name" name="last_name" >
 			    <label><b>Username</b></label>
 			    <input type="text" placeholder="Enter Username" name="login" >
+          <label><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" >
 			    <label><b>Password</b></label>
 			    <input type="password" placeholder="Enter Password" name="passwd" >
 
