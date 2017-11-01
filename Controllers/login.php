@@ -10,8 +10,14 @@
 
         if (Database::query('SELECT uid FROM users WHERE uid=:uid', array(':uid'=>$uid)))
         {
-          echo "User registered";
-          header('Location: index');
+          if (password_verify($password, self::query('SELECT password FROM users WHERE uid=:uid', array(':uid'=>$uid))[0]['password']))
+          {
+            echo "User registered";
+            header('Location: index');
+          }
+          else {
+            echo "Incorrect password!";
+          }
         }
         else {
           echo "User not registered";
