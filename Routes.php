@@ -20,6 +20,7 @@ Route::set('user-profile', function () {
 
 Route::set('login', function () {
     Login::CreatView('user_login');
+    Login::login_user();
 });
 
 Route::set('register', function () {
