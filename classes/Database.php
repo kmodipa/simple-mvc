@@ -15,6 +15,7 @@ class Database
         return $pdo;
     }
 
+    /* Database interaction */
     public static function query($query, $params = array())
     {
         $statement = self::connect()->prepare($query);
