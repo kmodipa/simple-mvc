@@ -10,7 +10,8 @@
 
         if (Database::query('SELECT uid FROM users WHERE uid=:uid', array(':uid'=>$uid)))
         {
-          if (password_verify($password, self::query('SELECT password FROM users WHERE uid=:uid', array(':uid'=>$uid))[0]['password']))
+          $password = hash('whirlpool', ($_POST['passwd'])); /* hash */
+          if ($password === Database::query('SELECT password FROM users WHERE uid=:uid', array(':uid'=>$uid))[0]['password'])
           {
             echo "User registered";
             header('Location: index');
