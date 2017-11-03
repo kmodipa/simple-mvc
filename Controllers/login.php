@@ -15,6 +15,15 @@
           {
             echo "User registered";
             header('Location: index');
+
+            $cstrong = True;
+            $token = bin2hex(openssl_random_pseudo_bytes(64, $cstrong));
+            $user_id = Database::query('SELECT id FROM users WHERE uid=:uid', array(':uid'=>$uid))[0]['id'];
+            Database::query('INSERT INTO login_tokens VALUES (\'\', :token, :user_id)', array(':token'=>sha1($token), ':user_id'=>$user_id));
+
+            setcookie("SNID", $token, time() + 60 * 60 * 24 * 7, '/', NULL, NULL, TRUE);
+            setcookie("SNID_", '1', time() + 60 * 60 * 24 * 3, '/', NULL, NULL, TRUE);
+            //echo $token;
           }
           else {
             echo "Incorrect password!";
