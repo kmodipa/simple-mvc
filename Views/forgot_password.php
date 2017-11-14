@@ -9,6 +9,10 @@ if (isset($_POST['register']))
 {
   header('Location: register');
 }
+elseif (isset($_POST['signin']))
+{
+  header('Location: login');
+}
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +40,7 @@ if (isset($_POST['register']))
 		<!-- The login form -->
 		<div id = "body">
 			<h1 id="header">Password Recovery</h1>
-			<form action='login' method="POST" style="border:1px solid #ccc">
+			<form action='' method="POST" style="border:1px solid #ccc">
 			  <div>
 			    <label><b>Username</b></label>
 			    <input type="text" placeholder="Enter Username" name="login">
