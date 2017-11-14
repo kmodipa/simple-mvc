@@ -5,7 +5,14 @@
   {
     public static function recover()
     {
-      # code...
+      if (isset($_POST['recovery']))
+      {
+
+      }
+      else
+      {
+
+      }
     }
   }
 ?>
