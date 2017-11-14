@@ -5,7 +5,7 @@ class Database
     public static $host = "127.0.0.1";
     public static $dbName = "example";
     public static $username = "root";
-    public static $password = "PFypuTEL";
+    public static $password = "root";
 
     /* The static just means we do not need to creat an object of the db-class in oreder to use it */
     private static function connect()
