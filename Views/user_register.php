@@ -30,9 +30,9 @@ if (isset($_POST['signin']))
 
 		<!-- The Registration form -->
 		<div id = "body">
-			<h2>User Registration</h2>
+			<h1 id="header">User Registration</h1>
 			<form action='register' method="POST" style="border:1px solid #ccc">
-			  <div class="form_inside">
+			  <div>
 			  	<label><b>First Name</b></label>
 			    <input type="text" placeholder="Enter First Name" name="first_name" >
 			    <label><b>Last Name</b></label>
@@ -44,9 +44,9 @@ if (isset($_POST['signin']))
 			    <label><b>Password</b></label>
 			    <input type="password" placeholder="Enter Password" name="passwd" >
 
-			    <div class="clearfix">
-			    	<a href=""><button type="submit" class="signupbtn" name = "signin" value="OK">Sign In</button></a>
-			      <button type="submit" class="registerbtn" name = "register" value="OK">Register</button>
+          <div class="clearfix">
+			      <button type="submit" class="signupbtn" name = "signin" value="OK">Sign In</button>
+			      <a href=""><button type="submit" class="registerbtn" name = "register" value="OK">Register</button></a><br><br><br>
 			    </div>
 			  </div>
 			</form>
