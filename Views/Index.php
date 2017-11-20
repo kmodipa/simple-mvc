@@ -1,6 +1,76 @@
 <?php
-
+/*
+ * Am pretty sure some php script is suppose to go here.
+ */
 
 ?>
 
-<h1>Welcome!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Profile </title>
+		<!-- Styling -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Google Fonts Import -->
+  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton">
+  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+  	<!-- css style -->
+		<link rel="stylesheet" type="text/css" href="https://rawgit.com/fthwala/camagru/master/Camagru_mvc/css/loginstyle.css">
+		<link rel="stylesheet" type="text/css" href="https://rawgit.com/fthwala/camagru/master/Camagru_mvc/css/general.css">
+</head>
+
+<!-- It's a body thing -->
+<body>
+		<div id='cssmenu'>
+			<ul>
+   				<li class='active'><form action="workarea" method="post"><a href='#'><span><button type="submit" name="confirm" value="Confirm">Home</button></span></a></form></li>
+				<li><form action="gallary" method="post"><a href='#'><span><button type="submit" name="confirm" value="Confirm">Gallery</button></span></a></form></li>
+				<li><form action="logout" method="post"><a href=""><span><button type="submit" name="confirm" value="Confirm">Logout</button></a></form></li>
+			</ul>
+		</div>
+	<!--<h1 style="text-align: center">My web cam</h1>-->
+
+		<div id="logo">
+			<!-- Logo image -->
+			<img src="https://rawgit.com/fthwala/camagru/master/Camagru_mvc/images/styling/logo.png" height='6%' width='66%'>
+		</div>
+
+
+		<div class='contaner' id='body'>
+        <h1 id = "header">Profile</h1>
+				<!-- Camera Section -->
+				<video autoplay="true" id="videoElement" width="100%" height="100%"></video> </br>
+				<button id="cbutton">Capture</button>
+
+				<div>
+					<!-- Preview -->
+					<canvas id="canvas" width="100%" height="100%"></canvas>
+				</div>
+
+				<div>
+					<form method="post" action="" name="" enctype="multipart/form-data">
+						<input type="file" name="img_file" id="img_file" />
+						<input type="submit" class="submit_butt" value="Upload image" name="s">
+			  	</form>
+				</div>
+
+		</div>
+
+			<div class="layers">
+				<form method="post" action="workarea" name="" enctype="multipart/form-data"></form>
+			</div>
+
+
+
+		<?php
+			$filepath = ROOT_DIR . "/js/camera.js";
+			$type = pathinfo($filepath, PATHINFO_EXTENSION);
+			$data = file_get_contents($filepath);
+			$base64 = 'data:text/javascript;' . $type . ';base64,' . base64_encode($data);
+			echo "<script src='$base64'></script>";
+		?>
+		
+</body>
+</html>
