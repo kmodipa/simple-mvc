@@ -42,14 +42,16 @@
         <h1 id = "header">Profile</h1>
 				<!-- Camera Section -->
 				<video autoplay="true" id="videoElement" width="100%" height="100%"></video> </br>
-				<button id="cbutton">Capture</button>
+				<div class="clearfix">
+					<button type="submit" class="signupbtn" name = "capture" value="OK">Capture</button>
+				</div>
 
 				<div>
 					<!-- Preview -->
 					<canvas id="canvas" width="100%" height="100%"></canvas>
 				</div>
 
-				<div>
+				<div >
 					<form method="post" action="" name="" enctype="multipart/form-data">
 						<input type="file" name="img_file" id="img_file" />
 						<input type="submit" class="submit_butt" value="Upload image" name="s">
@@ -71,6 +73,6 @@
 			$base64 = 'data:text/javascript;' . $type . ';base64,' . base64_encode($data);
 			echo "<script src='$base64'></script>";
 		?>
-		
+
 </body>
 </html>
