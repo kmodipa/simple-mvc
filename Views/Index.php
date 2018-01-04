@@ -17,7 +17,7 @@
 	  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
 
 	  	<!-- css style -->
-		<link rel="stylesheet" type="text/css" href="https://rawgit.com/fthwala/camagru/master/Camagru_mvc/css/loginstyle.css">
+		<link rel="stylesheet" type="text/css" href="https://rawgit.com/kmodipa/simple-mvc/master/Views/css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://rawgit.com/fthwala/camagru/master/Camagru_mvc/css/general.css">
 </head>
 
@@ -26,11 +26,11 @@
 		<div id='cssmenu'>
 			<ul>
    				<li class='active'><form action="workarea" method="post"><a href='#'><span><button type="submit" name="confirm" value="Confirm">Home</button></span></a></form></li>
-				<li><form action="gallary" method="post"><a href='#'><span><button type="submit" name="confirm" value="Confirm">Gallery</button></span></a></form></li>
+				<li><form action="gallery" method="post"><a href='#'><span><button type="submit" name="confirm" value="Confirm">Gallery</button></span></a></form></li>
 				<li><form action="logout" method="post"><a href=""><span><button type="submit" name="confirm" value="Confirm">Logout</button></a></form></li>
 			</ul>
 		</div>
-	<!--<h1 style="text-align: center">My web cam</h1>-->
+		<!--<h1 style="text-align: center">My web cam</h1>-->
 
 		<div id="logo">
 			<!-- Logo image -->
