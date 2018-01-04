@@ -20,7 +20,7 @@
 
   	<!-- css style -->
   	<?php
-		$filepath = ROOT_DIR . "/Views/css/main.css";
+		$filepath = ROOT_DIR . "/Views/css/index.css";
 		$type = pathinfo($filepath, PATHINFO_EXTENSION);
 		$data = file_get_contents($filepath);
 		$base64 = 'data:text/css;' . $type . ';base64,' . base64_encode($data);
