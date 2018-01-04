@@ -13,10 +13,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Google Fonts Import -->
-  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton">
-  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+	  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton">
+	  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
 
-  	<!-- css style -->
+	  	<!-- css style -->
 		<link rel="stylesheet" type="text/css" href="https://rawgit.com/fthwala/camagru/master/Camagru_mvc/css/loginstyle.css">
 		<link rel="stylesheet" type="text/css" href="https://rawgit.com/fthwala/camagru/master/Camagru_mvc/css/general.css">
 </head>
@@ -39,12 +39,13 @@
 
 
 		<div class='contaner' id='body'>
-        <h1 id = "header">Profile</h1>
+        	<h1 id = "header">Profile</h1>
 				<!-- Camera Section -->
 				<video autoplay="true" id="videoElement" width="100%" height="100%"></video> </br>
 				<div class="clearfix">
-					<button type="submit" class="signupbtn" name = "capture" value="OK">Capture</button>
+					<button class="signupbtn" >Capture</button>
 				</div>
+				<button id="cbutton">Capture</button>
 
 				<div>
 					<!-- Preview -->
@@ -55,7 +56,7 @@
 					<form method="post" action="" name="" enctype="multipart/form-data">
 						<input type="file" name="img_file" id="img_file" />
 						<input type="submit" class="submit_butt" value="Upload image" name="s">
-			  	</form>
+			  		</form>
 				</div>
 
 		</div>
