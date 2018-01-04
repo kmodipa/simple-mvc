@@ -7,6 +7,11 @@ Route::set('index', function () {
     Index::CreatView('Index');
 });
 
+Route::set('gallery', function () {
+   /* ControllerName::Method(); */
+    Gallery::CreatView('gallery');
+});
+
 Route::set('about-us', function () {
     /* When we access a route we can run a function here
      * The code for the function goes here
