@@ -9,14 +9,20 @@
 	color: #ffffff;
 	list-style: none;
 	text-align: center;
-	padding: 20px 0 20px 0;
+	padding: 2% 0 2% 0;
+
+	/* Shape the div */
+  	margin-top: 0%;
+ 	margin-left: 35%;
+  	margin-right: 35%;
+  	margin-bottom: 0%;
 }
 
 /* List inside the nav bar */
 .nav > li {
 	display: inline-block;
-	padding: 0 25px 0 25px;
-
+	padding: 0 2% 0 2%;
+	font-family: 'Montserrat', serif;
 }
 
 /* The links inside the nav bar */
