@@ -10,16 +10,25 @@ if (isset($_POST['signin']))
 <html>
 <head>
 	<title> Register</title>
-  <!-- Styling -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Styling -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Google Fonts Import -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<!-- Google Fonts Import -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
 
-  <!-- Styling -->
-  <link rel="stylesheet" type="text/css" href="https://rawgit.com/kmodipa/simple-mvc/master/Views/css/general.css">
-  <link rel="stylesheet" type="text/css" href="https://rawgit.com/kmodipa/simple-mvc/master/Views/css/style.css">
+	<!-- Styling -->
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/kmodipa/simple-mvc/master/Views/css/general.css">
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/kmodipa/simple-mvc/master/Views/css/style.css">
+	<!-- css style -->
+	<?php
+		$filepath = ROOT_DIR . "/Views/css/index.css";
+		$type = pathinfo($filepath, PATHINFO_EXTENSION);
+		$data = file_get_contents($filepath);
+		$base64 = 'data:text/css;' . $type . ';base64,' . base64_encode($data);
+		echo "<link "."href=$base64 rel='stylesheet'>"
+	?>
+
 </head>
 
 	<body>
@@ -27,6 +36,12 @@ if (isset($_POST['signin']))
     <div id = "logo">
       <img src="https://rawgit.com/kmodipa/simple-mvc/master/Views/images/logo.png" height='6%' width='66%'>
     </div>
+    	<div>
+			<!-- The nav-bar -->
+			<ul class="nav">
+				<li><a href="#">Gallery</a></li>
+			</ul>
+		</div>
 
 		<!-- The Registration form -->
 		<div id = "body">
