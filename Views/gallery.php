@@ -32,5 +32,12 @@
 <!-- It's a body thing -->
 <body>
 	<h1> Gallery is working </h1>
+
+	<!-- The nav-bar -->
+	<ul class="nav">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Profile</a></li>
+		<li><a href="#">LogOut</a></li>
+	</ul>
 </body>
 </html>
