@@ -44,7 +44,7 @@ if (isset($_POST['register']))
 		<div>
 			<!-- The nav-bar -->
 			<ul class="nav">
-				<li><a href="#">Gallery</a></li>
+				<li><a href="gallery">Gallery</a></li>
 			</ul>
 		</div>
 
@@ -61,7 +61,7 @@ if (isset($_POST['register']))
 			    <div class="clearfix">
 			      <button type="submit" class="signupbtn" name = "signin" value="OK">Sign In</button>
 			      <a href=""><button type="submit" class="registerbtn" name = "register" value="OK">Register</button></a><br><br><br>
-            <p> <a href="">Forgot password?</a></p>
+            <p> <a href="forgot_password">Forgot password?</a></p>
 			    </div>
 			  </div>
 			</form>

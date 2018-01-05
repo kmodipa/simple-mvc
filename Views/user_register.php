@@ -39,7 +39,7 @@ if (isset($_POST['signin']))
     	<div>
 			<!-- The nav-bar -->
 			<ul class="nav">
-				<li><a href="#">Gallery</a></li>
+				<li><a href="gallery">Gallery</a></li>
 			</ul>
 		</div>
 

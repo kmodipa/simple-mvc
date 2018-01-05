@@ -19,17 +19,12 @@
   		<!-- css style -->
 		<link rel="stylesheet" type="text/css" href="https://rawgit.com/kmodipa/simple-mvc/master/Views/css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://rawgit.com/kmodipa/simple-mvc/master/Views/css/general.css">
+		<link rel="stylesheet" type="text/css" href="https://rawgit.com/kmodipa/simple-mvc/master/Views/css/index.css">
+
 </head>
 
 <!-- It's a body thing -->
 <body>
-		<div id='cssmenu'>
-			<ul>
-   				<li class='active'><form action="workarea" method="post"><a href='#'><span><button type="submit" name="confirm" value="Confirm">Home</button></span></a></form></li>
-				<li><form action="gallery" method="post"><a href='#'><span><button type="submit" name="confirm" value="Confirm">Gallery</button></span></a></form></li>
-				<li><form action="logout" method="post"><a href=""><span><button type="submit" name="confirm" value="Confirm">Logout</button></a></form></li>
-			</ul>
-		</div>
 		<!--<h1 style="text-align: center">My web cam</h1>-->
 
 		<div id="logo">
@@ -37,6 +32,14 @@
 			<img src="https://rawgit.com/fthwala/camagru/master/Camagru_mvc/images/styling/logo.png" height='6%' width='66%'>
 		</div>
 
+		<div>
+			<!-- The nav-bar -->
+			<ul class="nav">
+				<li><a href="gallery">Gallery</a></li>
+				<li><a href="user-profile">Profile</a></li>
+				<li><a href="#">LogOut</a></li>
+			</ul>
+		</div>
 
 		<div class='contaner' id='body'>
         	<h1 id = "header">Profile</h1>
