@@ -24,7 +24,7 @@
 </head>
 
 <!-- It's a body thing -->
-<body>
+<body class="contaner">
 		<!--<h1 style="text-align: center">My web cam</h1>-->
 
 		<div id="logo">
@@ -52,7 +52,7 @@
 
 				<div>
 					<!-- Preview -->
-					<canvas id="canvas" width="100%" height="100%"></canvas>
+					<canvas id="canvas" width="500" height="375%"></canvas>
 				</div>
 
 				<div >
