@@ -35,8 +35,8 @@
 
 	<!-- The nav-bar -->
 	<ul class="nav">
-		<li><a href="index">Home</a></li>
-		<li><a href="user-profile">Profile</a></li>
+		<li><a href="register">Register</a></li>
+		<li><a href="login">Login</a></li>
 		<li><a href="#">LogOut</a></li>
 	</ul>
 </body>
